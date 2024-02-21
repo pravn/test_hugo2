@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Examples on A handful of dust</title>
-    <link>http://localhost:1313/test_hugo2/examples/</link>
+    <link>http://localhost:37025/test_hugo2/examples/</link>
     <description>Recent content in Examples on A handful of dust</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Oct 2022 18:24:02 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/test_hugo2/examples/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:37025/test_hugo2/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KaTeX Shortcode</title>
-      <link>http://localhost:1313/test_hugo2/examples/katex-shortcode/</link>
+      <link>http://localhost:37025/test_hugo2/examples/katex-shortcode/</link>
       <pubDate>Tue, 18 Oct 2022 18:23:55 -0700</pubDate>
-      <guid>http://localhost:1313/test_hugo2/examples/katex-shortcode/</guid>
+      <guid>http://localhost:37025/test_hugo2/examples/katex-shortcode/</guid>
       <description>Example 1 $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp;=&amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})G(x_i\longleftrightarrow x_{i-1})}{p_a(x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{G(x_k\longleftrightarrow x_{k-1})L_e(x_k\rightarrow x_{k-1})}{p_a(x_{k-1})p_a(x_k)}) \end{array} $$ Example 2 $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp; &amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})cos\theta_{i\rightarrow i-1}}{p_w(x_i\rightarrow x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{cos\theta_{k\rightarrow k-1}L_e(x_k\rightarrow x_{k-1})}{p_w(x_k \rightarrow x_{k-1})p_a(x_k)}) \end{array} $$ Example 3 $$\int_{-\infty}^{\infty} e^{-x^2} dx$$ $${a}^{b} - \overbrace{c}^{d}$$ $$\underbrace{a}_{b} - \underbrace{c}_{d}$$ $$ \begin{aligned} equation &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned} $$ $$ \begin{pmatrix} a &amp;amp; b \\ c &amp;amp; d \end{pmatrix} $$ Example 4 (inline) inline $\sum_{i = 0}^N 2i = y$ example</description>
     </item>
     <item>
       <title>KaTeX Shortcode (no breaks)</title>
-      <link>http://localhost:1313/test_hugo2/examples/katex-shortcode-no-breaks/</link>
+      <link>http://localhost:37025/test_hugo2/examples/katex-shortcode-no-breaks/</link>
       <pubDate>Tue, 18 Oct 2022 18:23:55 -0700</pubDate>
-      <guid>http://localhost:1313/test_hugo2/examples/katex-shortcode-no-breaks/</guid>
+      <guid>http://localhost:37025/test_hugo2/examples/katex-shortcode-no-breaks/</guid>
       <description>$$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp;=&amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})G(x_i\longleftrightarrow x_{i-1})}{p_a(x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{G(x_k\longleftrightarrow x_{k-1})L_e(x_k\rightarrow x_{k-1})}{p_a(x_{k-1})p_a(x_k)}) \end{array} $$ $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp; &amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})cos\theta_{i\rightarrow i-1}}{p_w(x_i\rightarrow x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{cos\theta_{k\rightarrow k-1}L_e(x_k\rightarrow x_{k-1})}{p_w(x_k \rightarrow x_{k-1})p_a(x_k)}) \end{array} $$ $$\int_{-\infty}^{\infty} e^{-x^2} dx$$ $${a}^{b} - \overbrace{c}^{d}$$ $$\underbrace{a}_{b} - \underbrace{c}_{d}$$ $$ \begin{aligned} equation &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned} $$ $$ \begin{pmatrix} a &amp;amp; b \\ c &amp;amp; d \end{pmatrix} $$ inline $\sum_{i = 0}^N 2i = y$ example</description>
     </item>
     <item>
       <title>KaTeX Code Block</title>
-      <link>http://localhost:1313/test_hugo2/examples/katex-code-block/</link>
+      <link>http://localhost:37025/test_hugo2/examples/katex-code-block/</link>
       <pubDate>Tue, 18 Oct 2022 18:24:02 -0700</pubDate>
-      <guid>http://localhost:1313/test_hugo2/examples/katex-code-block/</guid>
+      <guid>http://localhost:37025/test_hugo2/examples/katex-code-block/</guid>
       <description>Example 1 $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp;=&amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})G(x_i\longleftrightarrow x_{i-1})}{p_a(x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{G(x_k\longleftrightarrow x_{k-1})L_e(x_k\rightarrow x_{k-1})}{p_a(x_{k-1})p_a(x_k)}) \end{array} $$ Example 2 $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp; &amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})cos\theta_{i\rightarrow i-1}}{p_w(x_i\rightarrow x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{cos\theta_{k\rightarrow k-1}L_e(x_k\rightarrow x_{k-1})}{p_w(x_k \rightarrow x_{k-1})p_a(x_k)}) \end{array} $$ Example 3 $$\int_{-\infty}^{\infty} e^{-x^2} dx$$ $${a}^{b} - \overbrace{c}^{d}$$ $$\underbrace{a}_{b} - \underbrace{c}_{d}$$ $$ \begin{aligned} equation &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned} $$ $$ \begin{pmatrix} a &amp;amp; b \\ c &amp;amp; d \end{pmatrix} $$ </description>
     </item>
     <item>
       <title>KaTeX Code Block (no breaks)</title>
-      <link>http://localhost:1313/test_hugo2/examples/katex-code-block-no-breaks/</link>
+      <link>http://localhost:37025/test_hugo2/examples/katex-code-block-no-breaks/</link>
       <pubDate>Tue, 18 Oct 2022 18:24:02 -0700</pubDate>
-      <guid>http://localhost:1313/test_hugo2/examples/katex-code-block-no-breaks/</guid>
+      <guid>http://localhost:37025/test_hugo2/examples/katex-code-block-no-breaks/</guid>
       <description> $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp;=&amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})G(x_i\longleftrightarrow x_{i-1})}{p_a(x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{G(x_k\longleftrightarrow x_{k-1})L_e(x_k\rightarrow x_{k-1})}{p_a(x_{k-1})p_a(x_k)}) \end{array} $$ $$ \begin{array} {lcl} L(p,w_i) &amp;amp;=&amp;amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;amp; &amp;amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&amp;#43;1}\rightarrow x_i\rightarrow x_{i-1})cos\theta_{i\rightarrow i-1}}{p_w(x_i\rightarrow x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{cos\theta_{k\rightarrow k-1}L_e(x_k\rightarrow x_{k-1})}{p_w(x_k \rightarrow x_{k-1})p_a(x_k)}) \end{array} $$ $$\int_{-\infty}^{\infty} e^{-x^2} dx$$ $${a}^{b} - \overbrace{c}^{d}$$ $$\underbrace{a}_{b} - \underbrace{c}_{d}$$ $$ \begin{aligned} equation &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned} $$ $$ \begin{pmatrix} a &amp;amp; b \\ c &amp;amp; d \end{pmatrix} $$ </description>
     </item>
   </channel>
