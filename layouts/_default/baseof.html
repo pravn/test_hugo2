@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ or .Site.LanguageCode .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  <title>{{ with .Title }}{{ printf "%s | " . }}{{ end }}{{ site.Title }}</title>
+  <style>
+    body {
+      color: #222;
+      font-family: sans-serif;
+      margin: 0 0 3rem 1rem;
+      max-width: 768px;
+      width: 90%;
+    }
+    .equation {
+      background: #ccc;
+      border-radius: .3rem;
+      margin: 2rem 0;
+      overflow-x:auto;
+      padding: 1rem 1rem;
+    }
+    .katex-display > .katex {
+      text-align: left !important;
+    }
+  </style>
+
+  {{ $noop := .Content }}
+  {{ if or (.HasShortcode "katex") (.Page.Store.Get "hasKatex") }}
+    {{ partial "katex.html" }}
+  {{ end }}
+
+</head>
+<body>
+{{ block "main" . }}
+
+{{ end }}
+</body>
+</html>

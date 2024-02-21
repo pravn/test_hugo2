@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/test_hugo/examples/katex-shortcode/</loc>
+    <lastmod>2022-10-18T18:23:55-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/examples/katex-shortcode-no-breaks/</loc>
+    <lastmod>2022-10-18T18:23:55-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/examples/katex-code-block/</loc>
+    <lastmod>2022-10-18T18:24:02-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/examples/katex-code-block-no-breaks/</loc>
+    <lastmod>2022-10-18T18:24:02-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/examples/</loc>
+    <lastmod>2022-10-18T18:24:02-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/test_hugo/tags/</loc>
+  </url>
+</urlset>

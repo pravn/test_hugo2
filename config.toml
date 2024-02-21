@@ -1,0 +1,5 @@
+baseURL = 'https://pravn.github.io/test_hugo'
+languageCode = 'en-us'
+title = 'A handful of dust'
+theme = 'ananke'
+publishDir = 'docs'
