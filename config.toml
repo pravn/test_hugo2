@@ -3,3 +3,5 @@ languageCode = 'en-us'
 title = 'A handful of dust'
 theme = 'ananke'
 publishDir = 'docs'
+linkTitle="posts"
+Paginate=1
