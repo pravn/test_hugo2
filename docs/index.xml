@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A handful of dust</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>http://localhost:1313/test_hugo2/</link>
     <description>Recent content on A handful of dust</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Mar 2024 17:47:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/test_hugo2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poisson2</title>
-      <link>http://localhost:1313/blog/posts/poisson2/</link>
+      <link>http://localhost:1313/test_hugo2/posts/poisson2/</link>
       <pubDate>Sun, 03 Mar 2024 17:47:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/posts/poisson2/</guid>
+      <guid>http://localhost:1313/test_hugo2/posts/poisson2/</guid>
       <description>In this post, we look at the Poisson distribution, and briefly elaborate its properties for use in Bayesian analysis (from BDA).&#xA;The Poisson distribution is characterized by a single parameter $\theta$ such that&#xA;$$ \begin{aligned} p(y|\theta) = \frac{\theta ^ y e^{-\theta}}{y!} \end{aligned}$$ $$\begin{aligned} equation \ p(y) &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned}$$ </description>
     </item>
     <item>
       <title>Poisson</title>
-      <link>http://localhost:1313/blog/posts/poisson/</link>
+      <link>http://localhost:1313/test_hugo2/posts/poisson/</link>
       <pubDate>Sun, 03 Mar 2024 17:15:44 -0500</pubDate>
-      <guid>http://localhost:1313/blog/posts/poisson/</guid>
+      <guid>http://localhost:1313/test_hugo2/posts/poisson/</guid>
       <description>Introduction In this post, we look at the Poisson distribution, and briefly elaborate its properties for use in Bayesian analysis (from BDA).&#xA;The Poisson distribution is characterized by a single parameter $\theta$ such that&#xA;$$ \begin{aligned} p(y|\theta) = \frac{\theta ^ y e^{-\theta}}{y!} \end{aligned}$$ $$\begin{aligned} equation \ p(y) &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned}$$ </description>
     </item>
   </channel>
