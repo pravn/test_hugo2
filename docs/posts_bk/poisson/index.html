@@ -3,7 +3,7 @@
 <head><script src="/test_hugo2/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=test_hugo2/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-  <title>KaTeX Code Block | A handful of dust</title>
+  <title>Poisson | A handful of dust</title>
   <style>
     body {
       color: #222;
@@ -51,37 +51,24 @@
 </head>
 <body>
 
-  <h1>KaTeX Code Block</h1>
-  <h2 id="example-1">Example 1</h2>
+  <h1>Poisson</h1>
+  <h2 id="introduction">Introduction</h2>
+<p>In this post, we look at the Poisson distribution, and briefly elaborate its properties for use in Bayesian analysis (from BDA).</p>
+<p>The Poisson distribution is characterized by a single parameter $\theta$
+ such that</p>
 
-  <div class="equation">$$ \begin{array} {lcl} L(p,w_i) &amp;=&amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp;=&amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&#43;1}\rightarrow x_i\rightarrow x_{i-1})G(x_i\longleftrightarrow x_{i-1})}{p_a(x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{G(x_k\longleftrightarrow x_{k-1})L_e(x_k\rightarrow x_{k-1})}{p_a(x_{k-1})p_a(x_k)}) \end{array} $$
+  <div class="equation leqno" >$$ \begin{aligned}
+        p(y|\theta) = \frac{\theta ^ y e^{-\theta}}{y!}
+\end{aligned}$$
   </div>
-<h2 id="example-2">Example 2</h2>
 
-  <div class="equation">$$ \begin{array} {lcl} L(p,w_i) &amp;=&amp; \dfrac{1}{N}\Sigma_{i=1}^N(\underbrace{f_r(x_2\rightarrow x_1 \rightarrow x_0)G(x_1\longleftrightarrow x_2)f_r(x_3\rightarrow x_2 \rightarrow x_1)}_{sample\, radiance\, evaluation\, in\, stage2} \\\\\\ &amp; &amp; \prod_{i=3}^{k-1}(\underbrace{\dfrac{f_r(x_{i&#43;1}\rightarrow x_i\rightarrow x_{i-1})cos\theta_{i\rightarrow i-1}}{p_w(x_i\rightarrow x_{i-1})}}_{stored\,in\,vertex\, during\, light\, path\, tracing\, in\, stage1})\dfrac{cos\theta_{k\rightarrow k-1}L_e(x_k\rightarrow x_{k-1})}{p_w(x_k \rightarrow x_{k-1})p_a(x_k)}) \end{array} $$
-  </div>
-<h2 id="example-3">Example 3</h2>
 
-  <div class="equation">$$\int_{-\infty}^{\infty} e^{-x^2} dx$$
-
-$${a}^{b} - \overbrace{c}^{d}$$
-
-$$\underbrace{a}_{b} - \underbrace{c}_{d}$$
-
-$$
-\begin{aligned}
-        equation &amp;= 16 \\
+  <div class="equation leqno" >$$\begin{aligned}
+        equation \ p(y) &amp;= 16 \\
         other &amp;= 26 &#43; 13
-\end{aligned}
-$$
-
-$$
-\begin{pmatrix}
-  a &amp; b \\
-      c &amp; d
-      \end{pmatrix}
-$$
+\end{aligned}$$
   </div>
+
 
 
 </body>
