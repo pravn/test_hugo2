@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Forum Topic #40998 on A handful of dust</title>
-    <link>http://localhost:1313/test_hugo2/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Hugo Forum Topic #40998 on A handful of dust</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Mar 2024 20:05:43 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/test_hugo2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PDF Means and Moment Generating Functions</title>
-      <link>http://localhost:1313/test_hugo2/posts/means/</link>
+      <link>http://localhost:1313/blog/posts/means/</link>
       <pubDate>Sun, 17 Mar 2024 20:05:43 -0400</pubDate>
-      <guid>http://localhost:1313/test_hugo2/posts/means/</guid>
+      <guid>http://localhost:1313/blog/posts/means/</guid>
       <description>This is a post to test out my new setup with hugo. I was not very happy with my setup in wordpress owing to lack of flexibility in writing equations. And when it wanted me to pay for it, I sort of gave up on the platform. Suffice it to say that that is the reason for the considerable delay in posting.&#xA;This time, we look at some very simple ideas concerning probability distributions.</description>
     </item>
     <item>
       <title>Distro_means</title>
-      <link>http://localhost:1313/test_hugo2/docs/posts/distro_means/</link>
+      <link>http://localhost:1313/blog/docs/posts/distro_means/</link>
       <pubDate>Sun, 17 Mar 2024 20:05:16 -0400</pubDate>
-      <guid>http://localhost:1313/test_hugo2/docs/posts/distro_means/</guid>
+      <guid>http://localhost:1313/blog/docs/posts/distro_means/</guid>
       <description></description>
     </item>
   </channel>
