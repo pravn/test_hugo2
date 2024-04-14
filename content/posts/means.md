@@ -5,7 +5,9 @@ draft = false
 +++
 This is a post to test out my new setup with hugo. I was not very happy with my setup in wordpress owing to lack of flexibility in writing equations. And when it wanted me to pay for it, I sort of gave up on the platform. Suffice it to say that that is the reason for the considerable delay in posting. 
 
-This time, we look at some very simple ideas concerning probability distributions. We look at two distributions - one continuous and the other discrete, and derive the means as first moments. We look at moment generating functions to help us. 
+A fair bit has changed since I had last posted. I have moved to a new country, and work on a nice research problem, with some really smart folks to collaborate with. My research work is in Bird's Eye View fusion in autonomous vehicles, and I will cover ideas from that problem in future posts. That being said, a personal goal is to cover the BDA book by Gelman et al, doing as much justice to it as I can manage in my copious free time. As is well known, we measure our lives in coffee spoonfulls of equations. So someday, when we sit upon the shore fishing, we can say that the lands have been set in order. 
+
+Digressions aside, this time, we look at some very simple ideas concerning probability distributions. We look at two distributions - one continuous and the other discrete, and derive the means as first moments. We look at moment generating functions to help us. 
 
 ## Mean as first moment of PDF
 For a continuous distribution {{< katex >}}$ f(x)$ {{< /katex >}} we define the mean of the distribution as 
