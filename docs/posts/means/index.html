@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/test_hugo2/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=test_hugo2/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  <title>PDF Means and Moment Generating Functions | A handful of dust</title>
+  <style>
+    body {
+      color: #222;
+      font-family: sans-serif;
+      margin: 0 0 3rem 1rem;
+      max-width: 768px;
+      width: 90%;
+    }
+    .equation {
+      background: #ccc;
+      border-radius: .3rem;
+      margin: 2rem 0;
+      overflow-x:auto;
+      padding: 1rem 1rem;
+    }
+    .katex-display > .katex {
+      text-align: left !important;
+    }
+  </style>
+
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ]
+    });
+  });
+</script>
+
+  
+
+</head>
+<body>
+
+  <h1>PDF Means and Moment Generating Functions</h1>
+  <p>This is a post to test out my new setup with hugo. I was not very happy with my setup in wordpress owing to lack of flexibility in writing equations. And when it wanted me to pay for it, I sort of gave up on the platform. Suffice it to say that that is the reason for the considerable delay in posting.</p>
+<p>This time, we look at some very simple ideas concerning probability distributions. We look at two distributions - one continuous and the other discrete, and derive the means as first moments. We look at moment generating functions to help us.</p>
+<h2 id="mean-as-first-moment-of-pdf">Mean as first moment of PDF</h2>
+<p>For a continuous distribution $ f(x)$ 
+ we define the mean of the distribution as</p>
+
+  <div class="equation">$$ \mu = \int x f(x) dx $$
+  </div>
+<p>For a discrete distribution, it is written as</p>
+
+  <div class="equation">$$ \mu = \sum x f(x) $$
+  </div>
+<h2 id="moment-generating-functions">Moment generating functions</h2>
+<p>Now we define the moment generating function, which can be used to derive the means and higher order moments.</p>
+<p>The continuous version can be written as</p>
+
+  <div class="equation">$$ M_X(t) = \int e^{tx} f(x) dx $$
+  </div>
+<p>Likewise the discrete version is as follows:</p>
+
+  <div class="equation">$$ M_X(t) = \sum e^{tx}f(x) $$
+  </div>
+<p>We can differentiate the MGF to obtain moments:</p>
+
+  <div class="equation">$$ \frac{ d M_X(t)}{dt} = \int x e^{tx} f(x) dx $$
+  </div>
+<p>Setting  $t=0$ 
+ gives us the first moment or the mean</p>
+
+  <div class="equation">$$ \frac{ d M_X}{dt}|_{t=0} = \int x f(x) dx $$
+  </div>
+<p>Naturally, higher moments such as variance or kurtosis can also be obtained this way. When we compute all the moments, we have a full description of the PDF.</p>
+<p>Let us use these ideas to derive expressions for two common distributions.</p>
+<h2 id="binomial-distribution">Binomial distribution</h2>
+<p>The binomial distribution is discrete, written as follows:</p>
+
+  <div class="equation">$$ \begin{align}
+f(x) = {n \choose x} p^x (1-p)^{n-x} 
+\end{align}
+$$
+  </div>
+<p>The mean for this is</p>
+
+  <div class="equation">$$ \begin{align}
+\mu = \sum_{x=0}^n {n \choose x} x p^x (1-p)^{n-x} 
+\end{align}
+$$
+  </div>
+<p>We can unroll the coefficient  ${n \choose x} $ 
+ to simplify the expressions</p>
+
+  <div class="equation">$$
+\begin{align}
+        \mu &amp;= \sum_{x=0}^n {n \choose x} x p^x (1-p)^{n-x} \\
+            &amp;= \sum_{x=0}^n \frac{n \cdot (n-1)!}{x \cdot (x-1) ((n-1)-(x-1))!} x p p^{x-1} (1-p)^{(n-1)-(x-1)} \\
+            &amp;= np \sum_{x=0}^{n-1} {n-1 \choose x-1} p^{x-1} (1-p)^{(n-1)-(x-1)} \\
+            &amp;= np  
+\end{align}
+$$
+  </div>
+<p>In the above, we make use of the fact that the binomial distribution sums to 1.</p>
+
+  <div class="equation">$$ \begin{align}
+ \sum_{x=0}^n {n \choose x} p^x (1-p)^{n-x} = 1 
+\end{align}
+$$
+  </div>
+<p>Next, we use the MGF to derive the means.</p>
+
+  <div class="equation">$$
+\begin{align}
+    M_X(t) &amp;= \sum_{x=0}^n {n \choose x} p^x (1-p)^{n-x} \\
+    &amp;= \sum_{x=0}^n {n \choose x} (pe^t)^x (1-p)^{n-x}\\
+    &amp;= (pe^t &#43; 1-p)^n
+\end{align}
+$$
+  </div>
+<p>We now invoke the definition of the mean from the MGF.</p>
+
+  <div class="equation">$$ 
+\begin{align}
+\mu &amp;= \frac{ dM_X}{dt}|_{t=0} \\
+&amp;= np (pe^t &#43; 1-p)^{n-1}|_{t=0} \\
+&amp;= np
+\end{align}
+$$
+  </div>
+<h2 id="gamma-distribution">Gamma distribution</h2>
+<p>Consider the continuous gamma distribution whose mean we would like to compute</p>
+
+  <div class="equation">$$
+\begin{align}
+   f(x) = \frac{1}{\Gamma(\alpha) \beta^\alpha} x^{\alpha-1} e^{-x/\beta}
+\end{align}
+$$
+  </div>
+<p>The MGF for this function is</p>
+
+  <div class="equation">$$
+\begin{align}
+   M_X(t) &amp;= \frac{1}{\Gamma(\alpha) \beta^\alpha} \int_{0}^\infty e^{tx} x^{\alpha-1} e^{-x/\beta} dx \\
+   &amp;= \frac{1}{\Gamma(\alpha) \beta^\alpha} \int_{0}^\infty x^{\alpha-1} e^{-x(\frac{1}{\beta} -t)} dx \\
+   &amp;= \frac{1}{\Gamma(\alpha) \beta^\alpha} \int_{0}^\infty x^{\alpha-1} e^{-x/(\frac{\beta}{1-\beta t})} dx 
+\end{align}
+$$
+  </div>
+<p>Recall that the expression for the gamma function below is a pdf:</p>
+
+  <div class="equation">$$
+\begin{align}
+   f(x) = \frac{1}{\Gamma(a) b^a} \int_0^\infty  x^{a-1} e^{-x/b} dx 
+\end{align}
+$$
+  </div>
+<p>It should therefore integrate to $ 1$ 
+, so that</p>
+
+  <div class="equation">$$
+\begin{align}
+   \int_0^\infty  x^{a-1} e^{-x/b} dx = \Gamma(a) b^a 
+\end{align}
+$$
+  </div>
+<p>Using this in the equation for the moment generating function we get</p>
+
+  <div class="equation">$$
+\begin{align}
+  \int_{0}^\infty x^{\alpha-1} e^{-x/(\frac{\beta}{1-\beta t})} dx = \Gamma(\alpha) (\frac{\beta}{1-\beta t})^\alpha  
+\end{align}
+$$
+  </div>
+<p>The MGF then becomes</p>
+
+  <div class="equation">$$
+\begin{align}
+  M_X(t) = \frac{1}{\Gamma(\alpha) \beta^\alpha} \int_{0}^\infty x^{\alpha-1} e^{-x/(\frac{\beta}{1-\beta t})} dx = (\frac{1}{1-\beta t})^\alpha  
+\end{align}
+$$
+  </div>
+<p>We can now derive the expectation from the MGF:</p>
+
+  <div class="equation">$$
+\begin{align}
+  EX = \frac{d}{dt} M_X(t) = \frac{\alpha \beta}{[(1-\beta t)^{\alpha&#43;1}]|_{t=0}} = \alpha \beta  
+\end{align}
+$$
+  </div>
+<h2 id="summary">Summary</h2>
+<p>We have derived through some raw machinery, the means of two well known distributions - the binomial and gamma. We used the exercise as a way to demonstrate the potentialities of the moment generating function. I have copied these derivations from what I think is the most essential book on all things statistics - Casella and Berger. In the next few posts, I will post on similar exercises from BDA3.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>Statistical Inference - Casella and Berger</li>
+<li>Bayesian Data Analysis (BDA3) - Gelman et. al.</li>
+</ol>
+
+
+</body>
+</html>

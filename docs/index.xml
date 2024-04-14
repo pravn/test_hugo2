@@ -6,21 +6,21 @@
     <description>Recent content in Hugo Forum Topic #40998 on A handful of dust</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Mar 2024 17:47:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2024 20:05:43 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/test_hugo2/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Poisson2</title>
-      <link>http://localhost:1313/test_hugo2/posts/poisson2/</link>
-      <pubDate>Sun, 03 Mar 2024 17:47:00 -0500</pubDate>
-      <guid>http://localhost:1313/test_hugo2/posts/poisson2/</guid>
-      <description>In this post, we look at the Poisson distribution, and briefly elaborate its properties for use in Bayesian analysis (from BDA).&#xA;The Poisson distribution is characterized by a single parameter $\theta$ such that&#xA;$$ \begin{aligned} p(y|\theta) = \frac{\theta ^ y e^{-\theta}}{y!} \end{aligned}$$ $$\begin{aligned} equation \ p(y) &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned}$$ </description>
+      <title>PDF Means and Moment Generating Functions</title>
+      <link>http://localhost:1313/test_hugo2/posts/means/</link>
+      <pubDate>Sun, 17 Mar 2024 20:05:43 -0400</pubDate>
+      <guid>http://localhost:1313/test_hugo2/posts/means/</guid>
+      <description>This is a post to test out my new setup with hugo. I was not very happy with my setup in wordpress owing to lack of flexibility in writing equations. And when it wanted me to pay for it, I sort of gave up on the platform. Suffice it to say that that is the reason for the considerable delay in posting.&#xA;This time, we look at some very simple ideas concerning probability distributions.</description>
     </item>
     <item>
-      <title>Poisson</title>
-      <link>http://localhost:1313/test_hugo2/posts/poisson/</link>
-      <pubDate>Sun, 03 Mar 2024 17:15:44 -0500</pubDate>
-      <guid>http://localhost:1313/test_hugo2/posts/poisson/</guid>
-      <description>Introduction In this post, we look at the Poisson distribution, and briefly elaborate its properties for use in Bayesian analysis (from BDA).&#xA;The Poisson distribution is characterized by a single parameter $\theta$ such that&#xA;$$ \begin{aligned} p(y|\theta) = \frac{\theta ^ y e^{-\theta}}{y!} \end{aligned}$$ $$\begin{aligned} equation \ p(y) &amp;amp;= 16 \\ other &amp;amp;= 26 &amp;#43; 13 \end{aligned}$$ </description>
+      <title>Distro_means</title>
+      <link>http://localhost:1313/test_hugo2/docs/posts/distro_means/</link>
+      <pubDate>Sun, 17 Mar 2024 20:05:16 -0400</pubDate>
+      <guid>http://localhost:1313/test_hugo2/docs/posts/distro_means/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
