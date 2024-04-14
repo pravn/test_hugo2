@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/blog/posts/means/</guid>
       <description>This is a post to test out my new setup with hugo. I was not very happy with my setup in wordpress owing to lack of flexibility in writing equations. And when it wanted me to pay for it, I sort of gave up on the platform. Suffice it to say that that is the reason for the considerable delay in posting.&#xA;This time, we look at some very simple ideas concerning probability distributions.</description>
     </item>
-    <item>
-      <title>Distro_means</title>
-      <link>http://localhost:1313/blog/docs/posts/distro_means/</link>
-      <pubDate>Sun, 17 Mar 2024 20:05:16 -0400</pubDate>
-      <guid>http://localhost:1313/blog/docs/posts/distro_means/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
