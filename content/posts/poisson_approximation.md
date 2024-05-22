@@ -84,7 +84,7 @@ Or in other words, we can approximate the Poisson with the binomial with large {
 
 In our note here, we show that the MGFs are the same. The Poisson MGF is approximated by the large {{<katex>}}$n$ {{</katex>}} sequence implied by the binomial MGF. Once this is established, one can reason out from the convergence of MGFs theorem (not shown here) that the distributions are the same. 
 
-To show that the MGFs are the same, manipulte the binomial MGF as follows 
+To show that the MGFs are the same, manipulate the binomial MGF as follows 
 
 ```katex 
 $$
