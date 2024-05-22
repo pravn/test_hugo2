@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  <title>Poisson approximation | A handful of dust</title>
+  <style>
+    body {
+      color: #222;
+      font-family: sans-serif;
+      margin: 0 0 3rem 1rem;
+      max-width: 768px;
+      width: 90%;
+    }
+    .equation {
+      background: #ccc;
+      border-radius: .3rem;
+      margin: 2rem 0;
+      overflow-x:auto;
+      padding: 1rem 1rem;
+    }
+    .katex-display > .katex {
+      text-align: left !important;
+    }
+  </style>
+
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ]
+    });
+  });
+</script>
+
+  
+
+</head>
+<body>
+
+  <h1>Poisson approximation</h1>
+  <p>We take a look at the Poisson distribution in this post. Continuing on similar lines as in the previous post, we derive the MGF of this distribution. Then we make the connection between the Poisson and the Binomial. This is a cute derivation from Casella and Berger.</p>
+<p>The Poisson distribution takes on the following form:</p>
+
+  <div class="equation">$$ 
+\begin{aligned}
+p(x;\lambda) = \frac {e^{-\lambda} \lambda^x}{x!}
+\end{aligned}
+$$
+  </div>
+<p>We can see that it is a product of a polynomial and exponential decay term, which are sort of competing influences. So while we expect the exponential to dominate at larger values of $\lambda$
+, the function is not monotonic, and will have a maximum, rising at first and then decaying to zero.</p>
+<p>The parameter $\lambda$
+ is called the rate. It is often used to model events that occur in periodic intervals, such as accidents or natural disasters like earthquakes. For instance, we could ascertain what the probability of there being 5 snow events in the winter season at a given place - say Montreal. The number would have a peak - say, 10. 1 event might be too low, and 100 might be too high. The parameter $\lambda$
+ determines the rate at which it snows. Naturally, we would expect it to be higher in Montreal than in New York owing to the former being generally much snowier.</p>
+<h2 id="poisson-mgf">Poisson MGF</h2>
+<p>The MGF is given by the expression</p>
+
+  <div class="equation">$$ 
+\begin{aligned}
+M_X(t) = \sum_0^\infty \frac{ e^{tx} e^{-\lambda} \lambda^x}{x!}   = \sum_0^\infty \frac{ e^{-\lambda} e^{x(t &#43; \log \lambda)}}{x!}
+\end{aligned}
+$$
+  </div>
+<p>To simplify this expression, we start with the reasoning that the Poisson distribution sums to unity, and massage the MGF on similar lines.</p>
+
+  <div class="equation">$$
+\begin{aligned}
+\sum_0^\infty \frac{e^{-\lambda} \lambda^x}{x!} = 1 
+\end{aligned}
+$$ 
+  </div>
+<p>or</p>
+
+  <div class="equation">$$
+\begin{aligned}
+\sum_0^\infty \frac{\lambda^x}{x!} = \sum_0^\infty \frac{ e^{x\log \lambda }}{x!}= e^\lambda
+\end{aligned}
+$$ 
+  </div>
+<p>Now, in the expression for the MGF above, let $\log u = t &#43; \log \lambda$ 
+ so that $u = \lambda e^t$ 
+. The terms in the MGF then become</p>
+
+  <div class="equation">$$ 
+\begin{aligned}
+M_X(t) = \sum_0^\infty \frac{ e^{-\lambda} e^{x(t &#43; \log \lambda)}}{x!} = \sum_0^\infty \frac{ e^{-\lambda} e^{x\log u}}{x!} = e^{-\lambda} e^u = e^{\lambda (e^t - 1)}
+\end{aligned}
+$$
+  </div>
+<h2 id="poisson-approximation">Poisson approximation</h2>
+<p>The binomial MGF is written as follows (see previous post):</p>
+
+  <div class="equation">$$
+\begin{aligned}
+M_Y(t) = [pe^t &#43; (1-p)]^n 
+\end{aligned}
+$$
+  </div>
+<p>Now, the Poisson approximation says that when we set $\lambda = np$ 
+ with large $n$ 
+, then</p>
+
+  <div class="equation">$$
+\begin{aligned}
+P(X=x) \approx P(Y=y) 
+\end{aligned}
+$$
+  </div>
+<p>Or in other words, we can approximate the Poisson with the binomial with large $n$ 
+.</p>
+<p>In our note here, we show that the MGFs are the same. The Poisson MGF is approximated by the large $n$ 
+ sequence implied by the binomial MGF. Once this is established, one can reason out from the convergence of MGFs theorem (not shown here) that the distributions are the same.</p>
+<p>To show that the MGFs are the same, manipulte the binomial MGF as follows</p>
+
+  <div class="equation">$$
+\begin{aligned}
+[pe^t &#43; (1-p)]^n &amp;=&amp; [1&#43; \frac{np(e^t -1)}{n}]^n \\
+&amp;=&amp; [1&#43;\frac{\lambda(e^t-1)}{n}]^n  
+\end{aligned}
+$$
+  </div>
+<p>At the limit of large $n$
+ we have</p>
+
+  <div class="equation">$$
+\begin{aligned}
+\lim_{n \to \infty} [1&#43;\frac{\lambda(e^t-1)}{n}]^n = e^{\lambda(e^t-1)}  
+\end{aligned}
+$$
+  </div>
+<p>We can thus see that the MGFs of the two distributions at the large $n$
+ limit are the same. One can then say that the distributions are also approximately the same from the convergence of MGFs theorem, which says that if one MGF converges to the other at large $n$
+, then they also converge in distribution at $n\to\infty$
+.</p>
+<p>In other words, we can approximate the Poisson with the binomial, with $\lambda = np$ 
+ with large $n$
+.</p>
+
+
+</body>
+</html>
