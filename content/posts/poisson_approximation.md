@@ -71,7 +71,7 @@ M_Y(t) = [pe^t + (1-p)]^n
 $$
 ```
 
-Now, the Poisson approximation says that when we set {{<katex>}}$\lambda = np$ {{</katex>}} with large {{<katex>}}$n$ {{</katex>}}, then if {{<katex>}}$M_X(t) = M_Y(t)${{</katex>}}
+Now, the Poisson approximation says that when we set {{<katex>}}$\lambda = np$ {{</katex>}} with large {{<katex>}}$n$ {{</katex>}}, then if {{<katex>}}$M_X(t) \to M_Y(t)${{</katex>}}
 
 ```katex 
 $$
